@@ -1,5 +1,6 @@
 <head>
     <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -11,7 +12,9 @@
 <template name="Gallery">
     <div id="gallery">
         <div id="image">
-            <img src={{getImage}} height=500px;>
+            <img src={{getImage}}>
+            <div class="arrow-left"></div>
+            <div class="arrow-right"></div>
         </div>
     </div>
 </template>
