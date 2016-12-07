@@ -1,25 +1,29 @@
 <head>
-  <title>Gallery</title>
+    <title>Gallery</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
-  {{> info}}
+    <h1>Image Gallery</h1>
+    {{> Gallery}}
+    {{> Menu}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="Gallery">
+    <div id="gallery">
+        <div id="image">
+            <img src={{getImage}} height=500px;>
+        </div>
+    </div>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="Menu">
+    <div id="menu">
+        <ul>
+            <li class={{isSelected 'house'}}><div id="house">House</div></li>
+            <li class={{isSelected 'car'}}><div id="car">Car</div></li>
+            <li id="lamp" class={{isSelected 'lamp'}}><div>Lamp</div></li>
+            <li id="horse" class={{isSelected 'horse'}}><div>Horse</div></li>
+            <li id="stone" class={{isSelected 'stone'}}><div>Stone</div></li>
+        </ul>
+    </div>
 </template>
