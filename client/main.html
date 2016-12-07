@@ -22,11 +22,11 @@
 <template name="Menu">
     <div id="menu">
         <ul>
-            <li class={{isSelected 'house'}}><div id="house">House</div></li>
-            <li class={{isSelected 'car'}}><div id="car">Car</div></li>
-            <li id="lamp" class={{isSelected 'lamp'}}><div>Lamp</div></li>
-            <li id="horse" class={{isSelected 'horse'}}><div>Horse</div></li>
-            <li id="stone" class={{isSelected 'stone'}}><div>Stone</div></li>
+            <li id="house" class="{{isSelected 'house'}} {{menuClass 'house'}}"><div>House</div></li>
+            <li id="car" class="{{isSelected 'car'}} {{menuClass 'car'}}"><div>Car</div></li>
+            <li id="lamp" class="{{isSelected 'lamp'}} {{menuClass 'lamp'}}"><div>Lamp</div></li>
+            <li id="horse" class="{{isSelected 'horse'}} {{menuClass 'horse'}}"><div>Horse</div></li>
+            <li id="stone" class="{{isSelected 'stone'}} {{menuClass 'stone'}}"><div>Stone</div></li>
         </ul>
     </div>
 </template>

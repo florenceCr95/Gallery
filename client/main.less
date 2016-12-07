@@ -39,24 +39,40 @@ ul {
         height: 500px;
     }
     .arrow-right {
+        display: block;
+        margin: 20px;
         width: 0;
         height: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-
-        border-left: 10px solid white;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid white;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        top: -260px;
     }
     .arrow-left {
+        display: block;
+        margin: 20px;
         width: 0;
         height: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-
-        border-right:10px solid white;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right:20px solid white;
+        cursor: pointer;
+        float: left;
+        position: relative;
+        top: -260px;
     }
 }
 @media screen and (min-width: 1200px) {
     img {
         height: 600px;
+    }
+    .arrow-right {
+        top: -310px;
+    }
+    .arrow-left {
+        top: -310px;
     }
 }
